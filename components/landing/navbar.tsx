@@ -28,8 +28,8 @@ export function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? "bg-[#1a2e5a] shadow-lg shadow-[#1a2e5a]/20" 
-          : "bg-[#1a2e5a]"
+          ? "bg-white shadow-lg shadow-[#1a2e5a]/10" 
+          : "bg-white/80 backdrop-blur-md"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,7 +40,7 @@ export function Navbar() {
               <div className="w-2 h-2 bg-[#f47920] rounded-sm" />
               <div className="w-2 h-2 bg-[#00aeef] rounded-sm" />
             </div>
-            <span className="font-[family-name:var(--font-montserrat)] font-bold text-white text-lg md:text-xl">
+            <span className="font-[family-name:var(--font-montserrat)] font-bold text-[#1a2e5a] text-lg md:text-xl">
               VF Digital Solutions
             </span>
           </Link>
@@ -51,7 +51,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white/90 hover:text-[#f47920] transition-colors duration-300 text-sm font-medium"
+                className="text-[#1a2e5a]/80 hover:text-[#f47920] transition-colors duration-300 text-sm font-medium"
               >
                 {link.label}
               </Link>
@@ -67,7 +67,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-white p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
+            className="md:hidden text-[#1a2e5a] p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
             aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -81,13 +81,13 @@ export function Navbar() {
           isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-[#1a2e5a] border-t border-white/10 px-4 py-4 space-y-4">
+        <div className="bg-white border-t border-[#e2e8f0] px-4 py-4 space-y-4 shadow-lg">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-white/90 hover:text-[#f47920] transition-colors duration-300 py-2 text-base font-medium"
+              className="block text-[#1a2e5a]/80 hover:text-[#f47920] transition-colors duration-300 py-2 text-base font-medium"
             >
               {link.label}
             </Link>

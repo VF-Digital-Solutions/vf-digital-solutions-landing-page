@@ -16,9 +16,9 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#1a2333] pt-16 pb-8">
+    <footer className="bg-white pt-16 pb-8 border-t border-[#e2e8f0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-12 md:gap-8 pb-12 border-b border-white/10">
+        <div className="grid md:grid-cols-3 gap-12 md:gap-8 pb-12 border-b border-[#e2e8f0]">
           {/* Logo & Tagline */}
           <div>
             <Link href="#inicio" className="flex items-center gap-2 mb-4">
@@ -26,11 +26,11 @@ export function Footer() {
                 <div className="w-2 h-2 bg-[#f47920] rounded-sm" />
                 <div className="w-2 h-2 bg-[#00aeef] rounded-sm" />
               </div>
-              <span className="font-[family-name:var(--font-montserrat)] font-bold text-white text-xl">
+              <span className="font-[family-name:var(--font-montserrat)] font-bold text-[#1a2e5a] text-xl">
                 VF Digital Solutions
               </span>
             </Link>
-            <p className="text-white/70 text-sm leading-relaxed max-w-xs">
+            <p className="text-[#1a2e5a]/70 text-sm leading-relaxed max-w-xs">
               Atención directa, soluciones reales. Tecnología a medida para empresas chilenas.
             </p>
             
@@ -43,7 +43,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#f47920] transition-colors duration-300 group"
+                  className="w-10 h-10 rounded-full bg-[#1a2e5a]/5 flex items-center justify-center hover:bg-[#f47920] transition-colors duration-300 group"
                 >
                   <social.icon className="w-5 h-5 text-[#f47920] group-hover:text-white transition-colors" />
                 </a>
@@ -53,7 +53,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-white text-lg mb-6">
+            <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-[#1a2e5a] text-lg mb-6">
               Enlaces rápidos
             </h3>
             <ul className="space-y-3">
@@ -61,7 +61,7 @@ export function Footer() {
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-white/70 hover:text-[#f47920] transition-colors duration-300 text-sm"
+                    className="text-[#1a2e5a]/70 hover:text-[#f47920] transition-colors duration-300 text-sm"
                   >
                     {link.label}
                   </Link>
@@ -72,14 +72,14 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-white text-lg mb-6">
+            <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-[#1a2e5a] text-lg mb-6">
               Contacto
             </h3>
             <ul className="space-y-4">
               <li>
                 <a
                   href="mailto:gerencia@vfdigital.cl"
-                  className="flex items-center gap-3 text-white/70 hover:text-[#f47920] transition-colors duration-300 text-sm"
+                  className="flex items-center gap-3 text-[#1a2e5a]/70 hover:text-[#f47920] transition-colors duration-300 text-sm"
                 >
                   <Mail className="w-5 h-5 text-[#00aeef]" />
                   gerencia@vfdigital.cl
@@ -88,7 +88,7 @@ export function Footer() {
               <li>
                 <a
                   href="tel:+56998259829"
-                  className="flex items-center gap-3 text-white/70 hover:text-[#f47920] transition-colors duration-300 text-sm"
+                  className="flex items-center gap-3 text-[#1a2e5a]/70 hover:text-[#f47920] transition-colors duration-300 text-sm"
                 >
                   <Phone className="w-5 h-5 text-[#00aeef]" />
                   +56 9 9825 9829
@@ -99,7 +99,7 @@ export function Footer() {
                   href="https://vfdigital.cl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-white/70 hover:text-[#f47920] transition-colors duration-300 text-sm"
+                  className="flex items-center gap-3 text-[#1a2e5a]/70 hover:text-[#f47920] transition-colors duration-300 text-sm"
                 >
                   <Globe className="w-5 h-5 text-[#00aeef]" />
                   www.vfdigital.cl
@@ -111,7 +111,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="pt-8 text-center">
-          <p className="text-white/50 text-sm">
+          <p className="text-[#1a2e5a]/50 text-sm">
             © {new Date().getFullYear()} VF Digital Solutions. Todos los derechos reservados.
           </p>
         </div>

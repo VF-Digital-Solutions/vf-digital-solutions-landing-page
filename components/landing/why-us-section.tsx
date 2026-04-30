@@ -33,14 +33,14 @@ const reasons = [
 
 export function WhyUsSection() {
   return (
-    <section id="por-que-nosotros" className="py-20 md:py-28 bg-[#1a2333]">
+    <section id="por-que-nosotros" className="py-20 md:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-white text-3xl sm:text-4xl md:text-5xl text-balance">
+          <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-[#1a2e5a] text-3xl sm:text-4xl md:text-5xl text-balance">
             ¿Por qué elegir <span className="text-[#f47920]">VF Digital</span>?
           </h2>
-          <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto text-pretty">
+          <p className="mt-6 text-[#1a2e5a]/70 text-lg max-w-2xl mx-auto text-pretty">
             Nos diferenciamos por nuestra cercanía y compromiso con cada cliente
           </p>
         </div>
@@ -50,9 +50,9 @@ export function WhyUsSection() {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="group text-center p-6 md:p-8 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
+              className="group text-center p-6 md:p-8 rounded-xl bg-white shadow-lg shadow-[#1a2e5a]/5 border border-[#e2e8f0] hover:shadow-xl hover:shadow-[#1a2e5a]/10 hover:border-[#f47920]/30 transition-all duration-300"
             >
-              <div className="w-16 h-16 mx-auto rounded-full bg-[#f47920]/20 flex items-center justify-center mb-6 group-hover:bg-[#f47920]/30 transition-colors duration-300">
+              <div className="w-16 h-16 mx-auto rounded-full bg-[#f47920]/10 flex items-center justify-center mb-6 group-hover:bg-[#f47920]/20 transition-colors duration-300">
                 <reason.icon className="w-8 h-8 text-[#f47920]" />
               </div>
               
@@ -60,14 +60,14 @@ export function WhyUsSection() {
                 <span className="font-[family-name:var(--font-montserrat)] font-bold text-[#00aeef] text-4xl">
                   {reason.stat}
                 </span>
-                <p className="text-white/50 text-sm mt-1">{reason.statLabel}</p>
+                <p className="text-[#1a2e5a]/50 text-sm mt-1">{reason.statLabel}</p>
               </div>
               
-              <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-white text-xl mb-3">
+              <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-[#1a2e5a] text-xl mb-3">
                 {reason.title}
               </h3>
               
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-[#1a2e5a]/70 leading-relaxed">
                 {reason.description}
               </p>
             </div>
