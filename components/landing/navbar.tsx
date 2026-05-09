@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -35,14 +36,15 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="#inicio" className="flex items-center gap-2">
-            <div className="flex items-center gap-1">
-              <div className="w-2 h-2 bg-[#f47920] rounded-sm" />
-              <div className="w-2 h-2 bg-[#00aeef] rounded-sm" />
-            </div>
-            <span className="font-[family-name:var(--font-montserrat)] font-bold text-[#1a2e5a] text-lg md:text-xl">
-              VF Digital Solutions
-            </span>
+          <Link href="#inicio" className="flex items-center">
+            <Image
+              src="/images/logo-vf-digital.png"
+              alt="VF Digital Solutions"
+              width={180}
+              height={50}
+              className="h-10 md:h-12 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
