@@ -1,3 +1,4 @@
+// VF Digital Solutions Landing Page
 import { Navbar } from "@/components/landing/navbar"
 import { HeroSection } from "@/components/landing/hero-section"
 import { ServicesSection } from "@/components/landing/services-section"
